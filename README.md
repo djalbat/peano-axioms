@@ -1,8 +1,6 @@
-# De Morgan's Laws
+# Peano's Axioms
 
-De Morgan's laws for the [Occam](http://djalbat.com/occam) proof assistant.
-
-These depend on the Propositional-Logic repository.
+Peano's axioms for the [Occam](http://djalbat.com/occam) proof assistant.
 
 ## Contact
 
