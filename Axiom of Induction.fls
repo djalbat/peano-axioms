@@ -1,0 +1,62 @@
+include("/Propositional-Logic/Intuitionistic.fls")
+include("/Natural-Numbers/Definitions.fls")
+
+MetaVariable P(Nat)
+
+Variables n,k:Nat
+
+ProofVariables p,q,r
+
+Rule (P9,AxiomOfInduction)
+  Premises
+    P(0)
+    P(k) => P(k+1)
+  Conclusion
+    P(n)
+  Proof
+    n=0 ∨ n=k+1
+    Suppose
+      n=0
+    Hence
+      P(0)
+      p is a proof of P(0)
+      P(0) from p0
+    Therefore
+      P(n)
+    n=0 => P(n)
+
+    Suppose
+      n=k+1
+    Hence
+      P(k) => P(k+1)
+      q is a proof of P(k) => P(k+1)
+      ps(k) is a proof of P(k)
+      Hence
+        P(k+1) by ps(k+1)
+
+    Therefore
+      P(n)
+    n=k+1 => P(n)
+
+  Therefore
+    P(n) by ProofByCases
+
+Theorem (p0)
+  Premise
+    p is a proof of P(0)
+  Conclusion
+    P(0)
+  Proof
+    P(0) from p
+
+Theorem (ps(k+1))
+  Premises
+    q is a proof of P(k) => P(k+1)
+    r is a proof of P(k)
+  Conclusion
+    P(k+1)
+  Proof
+    P(k) => P(k+1) from q
+    P(k) from r
+  Therefore
+    P(k+1) from ModusPonens
