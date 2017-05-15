@@ -1,0 +1,69 @@
+include("/Propositional-Logic/Intuitionistic.fls")
+include("/Natural-Numbers/Definitions.fls")
+
+Variables l,m,n
+
+Theorem (P1)  
+  Conclusion  
+    zero:NaturalNumber
+ 
+Theorem (P2)
+  Premise
+    n:NaturalNumber
+  Conclusion
+    n=n
+
+Theorem (P3)
+  Premise
+    n:NaturalNumber
+    m:NaturalNumber
+    n=m
+  Conclusion
+    successor(n)=successor(m)    
+
+Theorem (P4)
+  Premises
+    n:NaturalNumber
+    m:NaturalNumber
+    l:NaturalNumber
+    l=n
+    n=m
+  Conclusion 
+    l=m      
+               
+Theorem (P5)
+  Premises
+    n:NaturalNumber
+    n=m
+  Conclusion
+    m:NaturalNumber
+
+Theorem (P6)
+  Premise 
+    n:NaturalNumber
+  Conclusion
+    s(n):NaturalNumber
+
+Theorem (P7)
+  Premises 
+    n:NaturalNumber
+    m:NaturalNumber
+    Suppose
+      n=m
+    Hence
+      successor(n)=successor(m)
+    n=m=>successor(n)=successor(m)
+
+    Suppose
+      successor(n)=successor(m)
+    Hence
+      n=m
+    successor(n)=successor(m)=>n=m
+
+    n=m iff successor(n)=successor(m) 
+
+Theorem (P8)
+  Premise 
+    n:NaturalNumber
+  Conclusion
+    successor(n)≠zero
