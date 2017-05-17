@@ -1,5 +1,5 @@
-include("/Propositional-Logic/Intuitionistic.fls")
-include("/Natural-Numbers/Definitions.fls")
+include("Propositional-Logic/Intuitionistic.fls")
+include("Natural-Numbers/Definitions.fls")
 
 MetaVariable P(Nat)
 
@@ -7,7 +7,7 @@ Variables n,k:Nat
 
 ProofVariables p,q,r
 
-Rule (P9,AxiomOfInduction)
+Rule (P9,Induction)
   Premises
     P(0)
     P(k) => P(k+1)
