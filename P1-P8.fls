@@ -14,7 +14,7 @@ Theorem (P2)
     n=n
 
 Theorem (P3)
-  Premise
+  Premises
     n:NaturalNumber
     m:NaturalNumber
     n=m
@@ -48,6 +48,9 @@ Theorem (P7)
   Premises 
     n:NaturalNumber
     m:NaturalNumber
+  Conclusion
+    n=m iff successor(n)=successor(m)
+  Proof
     Suppose
       n=m
     Hence
@@ -59,7 +62,7 @@ Theorem (P7)
     Hence
       n=m
     successor(n)=successor(m)=>n=m
-
+  Therefore
     n=m iff successor(n)=successor(m) 
 
 Theorem (P8)
