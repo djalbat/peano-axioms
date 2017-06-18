@@ -1,6 +1,81 @@
 include("Propositional-Logic/Intuitionistic.fls")
 include("Natural-Numbers/Definitions.fls")
 
+Rule (R(0))
+  Premise
+    T::P(0)
+  Conclusion
+    P(0) 
+  Proof
+    P(0) from T
+
+Rule(R(k+1))
+  Premises
+    SS::P(k)=>P(k+1)
+    R(k)::P(k)
+  Conclusion
+    P(k+1)
+  Proof
+    P(k)=>P(k+1) from S
+    P(k) from R
+  Therefore
+    P(k+1) by ModusPonens
+    
+Rule (Induction)
+  Premises
+    T::P(0)
+    S::P(k)=>P(k+1)
+  Conclusion
+    R(n)::P(n)
+  Proof
+    n=0 ∨ n=k+1
+    Suppose
+      n=0
+    Then
+      P(0)
+      T::P(0)
+      BaseCase::T::P(0)=>P(0) from T
+      T::P(0)=>P(0) from T
+      P(0) from T by ModusPonens
+    Hence
+      P(n)
+    n=0 => P(n)
+
+     Suppose
+       n=k+1
+     Then
+       P(k)=>P(k+1)
+       InductiveStep(k)::P(k) /*???*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MetaVariables R,S
+QuantifiedMetaVariable InductiveStep(Nat)
+
+Theorem (InductiveSteps(k+1))
+  Premises
+    R::Case(k)
+    S::Case(k)=>Case(k+1)
+  Conclusion
+    Case(k+1)
+  Proof
+    Case(k) from R
+    Case(k)=>Case(k+1) from S
+  Therefore
+    Case(k+1) from ModusPonens
+
+
 MetaVariable P(Nat)
 
 Variables n,k:Nat
@@ -17,24 +92,22 @@ Rule (P9,Induction)
     n=0 ∨ n=k+1
     Suppose
       n=0
-    Hence
+    Then
       P(0)
       p is a proof of P(0)
       P(0) from p0
-    Therefore
+    Hence
       P(n)
     n=0 => P(n)
 
     Suppose
       n=k+1
-    Hence
+    Then
       P(k) => P(k+1)
       q is a proof of P(k) => P(k+1)
       ps(k) is a proof of P(k)
-      Hence
-        P(k+1) by ps(k+1)
-
-    Therefore
+      P(k+1) by ps(k+1)
+    Hence
       P(n)
     n=k+1 => P(n)
 
@@ -48,15 +121,3 @@ Theorem (p0)
     P(0)
   Proof
     P(0) from p
-
-Theorem (ps(k+1))
-  Premises
-    q is a proof of P(k) => P(k+1)
-    r is a proof of P(k)
-  Conclusion
-    P(k+1)
-  Proof
-    P(k) => P(k+1) from q
-    P(k) from r
-  Therefore
-    P(k+1) from ModusPonens
