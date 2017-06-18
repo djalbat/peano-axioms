@@ -4,51 +4,50 @@ include("Natural-Numbers/Definitions.fls")
 Variables l,m,n
 
 Theorem (P1)  
-  Conclusion  
-    zero:NaturalNumber
+  zero:NaturalNumber
  
 Theorem (P2)
-  Premise
+  Suppose
     n:NaturalNumber
-  Conclusion
+  Hence
     n=n
 
 Theorem (P3)
-  Premises
+  Suppose
     n:NaturalNumber
     m:NaturalNumber
     n=m
-  Conclusion
+  Hence
     successor(n)=successor(m)    
 
 Theorem (P4)
-  Premises
+  Suppose
     n:NaturalNumber
     m:NaturalNumber
     l:NaturalNumber
     l=n
     n=m
-  Conclusion 
+  Hence 
     l=m      
                
 Theorem (P5)
-  Premises
+  Suppose
     n:NaturalNumber
     n=m
-  Conclusion
+  Hence
     m:NaturalNumber
 
 Theorem (P6)
-  Premise 
+  Suppose 
     n:NaturalNumber
-  Conclusion
+  Hence
     s(n):NaturalNumber
 
 Theorem (P7)
-  Premises 
+  Suppose 
     n:NaturalNumber
     m:NaturalNumber
-  Conclusion
+  Hence
     n=m iff successor(n)=successor(m)
   Proof
     Suppose
@@ -66,7 +65,7 @@ Theorem (P7)
     n=m iff successor(n)=successor(m) 
 
 Theorem (P8)
-  Premise 
+  Suppose
     n:NaturalNumber
-  Conclusion
+  Hence
     successor(n)≠zero
