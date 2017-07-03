@@ -1,6 +1,6 @@
-# Peano's Axioms
+# Peano Axioms
 
-Peano's axioms for the [Occam](http://djalbat.com/occam) proof assistant.
+Peano axioms for the [Occam](http://djalbat.com/occam) proof assistant.
 
 ## Contact
 
