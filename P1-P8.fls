@@ -55,7 +55,6 @@ Theorem (P7)
     Hence
       successor(n)=successor(m)
     n=m=>successor(n)=successor(m)
-
     Suppose
       successor(n)=successor(m)
     Hence
@@ -68,4 +67,5 @@ Theorem (P8)
   Suppose
     n:NaturalNumber
   Hence
-    successor(n)≠zero
+    ¬(successor(n)=zero)
+    
