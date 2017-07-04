@@ -3,7 +3,7 @@ include("Natural-Numbers/Definitions.fls")
 
 Abbreviations z for zero,s for successor,Nat for NaturalNumber
 
-Metavariables P(Nat),S,T
+Metavariables T,S,R(Nat)
 
 Contexts τ,σ,ρ(Nat)
 
@@ -12,58 +12,42 @@ Rule (Induction)
     τ ⊢ T::P(z)
     σ ⊢ S::P(k)=>P(s(k))
   Conclusion
-    ρ(n) ⊢ T(n)::P(n)
+    ρ(n) ⊢ R(n)::P(n)
   Proof
     let ρ(z)=T
-    let ρ(s(k))=S,T(k)
+    let ρ(s(k))=S,R(k)
     n=z ∨ n=s(k)
     Suppose
       n=z
     Then
       τ ⊢ T::P(z)
       ρ(z) ⊢ T::P(z)
-      ρ(z) ⊢ T(z)::P(z)
+      ρ(z) ⊢ R(z)::P(z)
     Hence
-      ρ(n) ⊢ T(n)::P(n)
-    n=z => ρ(n) ⊢ T(n)::P(n)
+      ρ(n) ⊢ R(n)::P(n)
+    n=z => ρ(n) ⊢ R(n)::P(n)
     Suppose
       n=s(k)
     Then
       σ ⊢ S::P(k)=>P(s(k))
       ρ(s(k)) ⊢ S::P(k)=>P(s(k))
-      ρ(s(k)) ⊢ T(k)::P(k)
-      ρ(s(k)) ⊢ T(s(k))::P(s(k))
+      ρ(s(k)) ⊢ R(k)::P(k)
+      ρ(s(k)) ⊢ R(s(k))::P(s(k))
     Hence
-      ρ(n) ⊢ T(n)::P(n)
-    n=s(k) => ρ(n) ⊢ T(n)::P(n)
+      ρ(n) ⊢ R(n)::P(n)
+    n=s(k) => ρ(n) ⊢ R(n)::P(n)
   Therefore
-    ρ(n) ⊢ T(n)::P(n) by ProofByCases
+    ρ(n) ⊢ R(n)::P(n) by ProofByCases
 
-Theorem (T(z))
+Theorem (R(z))
   P(z)
 Proof
   P(z) from T
 
-Theorem (T(s(k)))
+Theorem (R(s(k)))
   P(s(k))
 Proof
   P(k)=>P(s(k)) from S
-  P(k) from T(k)
+  P(k) from R(k)
 Therefore
   P(s(k)) by ModusPonens
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
