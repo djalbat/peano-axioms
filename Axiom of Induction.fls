@@ -1,123 +1,69 @@
-include("Propositional-Logic/Intuitionistic.fls")
+include("Propositional-Logic/Minimal.fls")
 include("Natural-Numbers/Definitions.fls")
 
-Rule (R(0))
-  Premise
-    T::P(0)
-  Conclusion
-    P(0) 
-  Proof
-    P(0) from T
+Abbreviations z for zero,s for successor,Nat for NaturalNumber
 
-Rule(R(k+1))
-  Premises
-    SS::P(k)=>P(k+1)
-    R(k)::P(k)
-  Conclusion
-    P(k+1)
-  Proof
-    P(k)=>P(k+1) from S
-    P(k) from R
-  Therefore
-    P(k+1) by ModusPonens
-    
+Metavariables P(Nat),S,T
+
+Contexts τ,σ,ρ(Nat)
+
 Rule (Induction)
   Premises
-    T::P(0)
-    S::P(k)=>P(k+1)
+    τ ⊢ T::P(z)
+    σ ⊢ S::P(k)=>P(s(k))
   Conclusion
-    R(n)::P(n)
+    ρ(n) ⊢ T(n)::P(n)
   Proof
-    n=0 ∨ n=k+1
+    let ρ(z)=T
+    let ρ(s(k))=S,T(k)
+    n=z ∨ n=s(k)
     Suppose
-      n=0
+      n=z
     Then
-      P(0)
-      T::P(0)
-      BaseCase::T::P(0)=>P(0) from T
-      T::P(0)=>P(0) from T
-      P(0) from T by ModusPonens
+      τ ⊢ T::P(z)
+      ρ(z) ⊢ T::P(z)
+      ρ(z) ⊢ T(z)::P(z)
     Hence
-      P(n)
-    n=0 => P(n)
-
-     Suppose
-       n=k+1
-     Then
-       P(k)=>P(k+1)
-       InductiveStep(k)::P(k) /*???*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-MetaVariables R,S
-QuantifiedMetaVariable InductiveStep(Nat)
-
-Theorem (InductiveSteps(k+1))
-  Premises
-    R::Case(k)
-    S::Case(k)=>Case(k+1)
-  Conclusion
-    Case(k+1)
-  Proof
-    Case(k) from R
-    Case(k)=>Case(k+1) from S
+      ρ(n) ⊢ T(n)::P(n)
+    n=z => ρ(n) ⊢ T(n)::P(n)
+    Suppose
+      n=s(k)
+    Then
+      σ ⊢ S::P(k)=>P(s(k))
+      ρ(s(k)) ⊢ S::P(k)=>P(s(k))
+      ρ(s(k)) ⊢ T(k)::P(k)
+      ρ(s(k)) ⊢ T(s(k))::P(s(k))
+    Hence
+      ρ(n) ⊢ T(n)::P(n)
+    n=s(k) => ρ(n) ⊢ T(n)::P(n)
   Therefore
-    Case(k+1) from ModusPonens
+    ρ(n) ⊢ T(n)::P(n) by ProofByCases
+
+Theorem (T(z))
+  P(z)
+Proof
+  P(z) from T
+
+Theorem (T(s(k)))
+  P(s(k))
+Proof
+  P(k)=>P(s(k)) from S
+  P(k) from T(k)
+Therefore
+  P(s(k)) by ModusPonens
 
 
-MetaVariable P(Nat)
 
-Variables n,k:Nat
 
-ProofVariables p,q,r
 
-Rule (P9,Induction)
-  Premises
-    P(0)
-    P(k) => P(k+1)
-  Conclusion
-    P(n)
-  Proof
-    n=0 ∨ n=k+1
-    Suppose
-      n=0
-    Then
-      P(0)
-      p is a proof of P(0)
-      P(0) from p0
-    Hence
-      P(n)
-    n=0 => P(n)
 
-    Suppose
-      n=k+1
-    Then
-      P(k) => P(k+1)
-      q is a proof of P(k) => P(k+1)
-      ps(k) is a proof of P(k)
-      P(k+1) by ps(k+1)
-    Hence
-      P(n)
-    n=k+1 => P(n)
 
-  Therefore
-    P(n) by ProofByCases
 
-Theorem (p0)
-  Premise
-    p is a proof of P(0)
-  Conclusion
-    P(0)
-  Proof
-    P(0) from p
+
+
+
+
+
+
+
+
