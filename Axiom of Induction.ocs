@@ -21,7 +21,6 @@ Rule (Induction)
       n=z
     Then
       ρ ⊢ R::P(z)
-      τ(z) ⊢ T::P(z)
       τ(z) ⊢ T(z)::P(z)
     Hence
       τ(n) ⊢ T(n)::P(n)
