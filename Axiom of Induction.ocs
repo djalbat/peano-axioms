@@ -15,12 +15,13 @@ Rule (Induction)
     τ(n) ⊢ R(n)::P(n)
   Proof
     let τ(z)=ρ
-    let τ(s(k))=σ,τ(k)
+    let τ(s(k))=σ,τ(k),T(k)
     n=z ∨ n=s(k)
     Suppose
       n=z
     Then
       ρ ⊢ R::P(z)
+      τ(z) ⊢ R::P(z)
       τ(z) ⊢ T(z)::P(z)
     Hence
       τ(n) ⊢ T(n)::P(n)
@@ -29,7 +30,8 @@ Rule (Induction)
       n=s(k)
     Then
       σ ⊢ S::P(k)=>P(s(k))
-      τ(k) ⊢ T(k)::P(k)
+      τ(s(k)) ⊢ S::P(k)=>P(s(k))
+      τ(s(k)) ⊢ T(k)::P(k) /* This is the dodgy bit... */
       τ(s(k)) ⊢ T(s(k))::P(s(k))
     Hence
       τ(n) ⊢ T(n)::P(n)
