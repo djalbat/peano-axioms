@@ -14,8 +14,8 @@ Rule (Induction)
   Conclusion
     τ(n) ⊢ R(n)::P(n)
   Proof
-    let τ(z)=T
-    let τ(s(k))=S,T(k)
+    let τ(z)=ρ
+    let τ(s(k))=σ,τ(k)
     n=z ∨ n=s(k)
     Suppose
       n=z
@@ -29,8 +29,7 @@ Rule (Induction)
       n=s(k)
     Then
       σ ⊢ S::P(k)=>P(s(k))
-      τ(s(k)) ⊢ S::P(k)=>P(s(k))
-      τ(s(k)) ⊢ T(k)::P(k)
+      τ(k) ⊢ T(k)::P(k)
       τ(s(k)) ⊢ T(s(k))::P(s(k))
     Hence
       τ(n) ⊢ T(n)::P(n)
