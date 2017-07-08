@@ -1,6 +1,3 @@
-include("Propositional-Logic/Minimal.fls")
-include("Natural-Numbers/Definitions.fls")
-
 Abbreviations z for zero,s for successor,Nat for NaturalNumber
 
 Metavariables T,S,R(Nat)

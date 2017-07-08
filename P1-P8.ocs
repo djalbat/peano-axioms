@@ -1,6 +1,3 @@
-include("Propositional-Logic/Intuitionistic.fls")
-include("Natural-Numbers/Definitions.fls")
-
 Variables l,m,n
 
 Theorem (P1)  
