@@ -6,4 +6,3 @@ Peano axioms for the [Occam](http://djalbat.com/occam) proof assistant.
 
 * jecs@imperial.ac.uk
 * http://djalbat.com
-

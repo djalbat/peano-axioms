@@ -2,6 +2,8 @@ Abbreviations z for zero,s for successor,Nat for NaturalNumber
 
 Metavariables R,S,T(Nat)
 
+Variables k:Nat,n:Nat
+
 Contexts ρ,σ,τ(Nat)
 
 Rule (Induction)
