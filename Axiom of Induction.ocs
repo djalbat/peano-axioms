@@ -2,7 +2,7 @@ Abbreviations z for zero,s for successor,Nat for NaturalNumber
 
 Metavariables R,S,T(Nat)
 
-Variables k:Nat,n:Nat
+Variables k,n
 
 Contexts ρ,σ,τ(Nat)
 
