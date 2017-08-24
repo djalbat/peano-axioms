@@ -38,12 +38,12 @@ Rule (Induction)
   Therefore
     τ(n) ⊢ T(n)::P(n) by ProofByCases
 
-Theorem (T(z))
+Metatheorem (T(z))
   P(z)
 Proof
   P(z) from R
 
-Theorem (T(s(k)))
+Metatheorem (T(s(k)))
   P(s(k))
 Proof
   P(k)=>P(s(k)) from S
