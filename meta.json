@@ -1,6 +1,7 @@
 {
   "dependencies": [
     "propositional-logic",
-    "natural-numbers"
+    "natural-numbers",
+    "induction"
   ]
 }
