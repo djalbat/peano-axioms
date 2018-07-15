@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/jecs-imperial/peano-axioms",
   "dependencies": [
-    "propositional-logic",
+    "intuitionistic-propositional-logic",
     "natural-numbers",
     "induction"
   ]
