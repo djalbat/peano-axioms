@@ -10,5 +10,5 @@ In fact this package contains lemmas corresponding to the Peano axioms that have
 
 ## Contact
 
-* jecs@imperial.ac.uk
+* james.smith@openmathematics.org
 * http://djalbat.com
