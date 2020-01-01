@@ -13,7 +13,7 @@ Theorem (P2)
   Proof
     n=n
 
-Theorem (P3)
+Conjecture (P3)
   Suppose
     n:NaturalNumber
     m:NaturalNumber
