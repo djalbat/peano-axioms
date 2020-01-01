@@ -1,12 +1,16 @@
-Variables l,m,n
+Variables l,m,n:NaturalNumber
 
 Theorem (P1)  
   zero:NaturalNumber
+  Proof
+    zero:NaturalNumber
  
 Theorem (P2)
   Suppose
     n:NaturalNumber
   Hence
+    n=n
+  Proof
     n=n
 
 Theorem (P3)
@@ -15,6 +19,8 @@ Theorem (P3)
     m:NaturalNumber
     n=m
   Hence
+    successor(n)=successor(m)    
+  Proof
     successor(n)=successor(m)    
 
 Theorem (P4)
@@ -26,6 +32,8 @@ Theorem (P4)
     n=m
   Hence 
     l=m      
+  Proof
+    l=m      
                
 Theorem (P5)
   Suppose
@@ -33,11 +41,15 @@ Theorem (P5)
     n=m
   Hence
     m:NaturalNumber
+  Proof
+    m:NaturalNumber
 
 Theorem (P6)
   Suppose 
     n:NaturalNumber
   Hence
+    s(n):NaturalNumber
+  Proof
     s(n):NaturalNumber
 
 Theorem (P7)
@@ -65,4 +77,5 @@ Theorem (P8)
     n:NaturalNumber
   Hence
     ¬(successor(n)=zero)
-    
+  Proof
+    ¬(successor(n)=zero)
