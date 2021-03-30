@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/jecs-imperial/peano-axioms",
+  "repository": "https://github.com/djalbat/peano-axioms",
   "dependencies": [
     "minimal-propositional-logic",
     "natural-numbers"
