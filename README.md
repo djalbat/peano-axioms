@@ -1,6 +1,6 @@
 # Peano Axioms
 
-Peano axioms for the [Occam](http://occam.science) proof assistant.
+Peano axioms for [Occam](https://occam.science).
 
 In fact this package contains theorems corresponding to the Peano axioms that have been *derived* from the construction of the natural numbers in the [natural numbers](https://openmathematics.org/#natural-numbers) package.
 
@@ -10,5 +10,4 @@ In fact this package contains theorems corresponding to the Peano axioms that ha
 
 ## Contact
 
-* james.smith@openmathematics.org
 * http://djalbat.com
