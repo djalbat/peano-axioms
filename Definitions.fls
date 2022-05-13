@@ -9,15 +9,15 @@ Theorem (P2)
   Suppose
     n:NaturalNumber
   Hence
-    n=n
+    n = n
   Proof
-    n=n
+    n = n
 
 Conjecture (P3)
   Suppose
     n:NaturalNumber
     m:NaturalNumber
-    n=m
+    n = m
   Hence
     successor(n)=successor(m)    
   Proof
@@ -28,17 +28,17 @@ Theorem (P4)
     n:NaturalNumber
     m:NaturalNumber
     l:NaturalNumber
-    l=n
-    n=m
+    l = n
+    n = m
   Hence 
-    l=m      
+    l = m      
   Proof
-    l=m      
+    l = m      
                
 Theorem (P5)
   Suppose
     n:NaturalNumber
-    n=m
+    n = m
   Hence
     m:NaturalNumber
   Proof
@@ -48,34 +48,34 @@ Theorem (P6)
   Suppose 
     n:NaturalNumber
   Hence
-    s(n):NaturalNumber
+    successor(n):NaturalNumber
   Proof
-    s(n):NaturalNumber
+    successor(n):NaturalNumber
 
 Theorem (P7)
   Suppose 
     n:NaturalNumber
     m:NaturalNumber
   Hence
-    n=m iff successor(n)=successor(m)
+    n = m iff successor(n)=successor(m)
   Proof
     Suppose
-      n=m
+      n = m
     Hence
       successor(n)=successor(m)
-    n=m => successor(n)=successor(m)
+    n = m => successor(n)=successor(m)
     Suppose
       successor(n)=successor(m)
     Hence
-      n=m
-    successor(n)=successor(m) => n=m
+      n = m
+    successor(n)=successor(m) => n = m
   Therefore
-    n=m iff successor(n)=successor(m) 
+    n = m iff successor(n)=successor(m) 
 
 Theorem (P8)
   Suppose
     n:NaturalNumber
   Hence
-    ¬(successor(n)=zero)
+    ¬(successor(n) = zero)
   Proof
-    ¬(successor(n)=zero)
+    ¬(successor(n) = zero)
