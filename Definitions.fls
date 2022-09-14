@@ -1,4 +1,6 @@
-Variables l,m,n:NaturalNumber
+Variable l:NaturalNumber
+Variable m:NaturalNumber
+Variable n:NaturalNumber
 
 Theorem (P1)  
   zero:NaturalNumber
