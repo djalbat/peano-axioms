@@ -1,7 +1,8 @@
 {
+  "version": "0.0.0",
   "repository": "https://github.com/djalbat/peano-axioms",
-  "dependencies": [
-    "minimal-propositional-logic",
-    "natural-numbers"
-  ]
+  "dependencies": {
+    "minimal-propositional-logic": "1.1",
+    "natural-numbers": "1.1"
+  }
 }
