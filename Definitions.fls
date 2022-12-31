@@ -2,11 +2,12 @@ Variable l:NaturalNumber
 Variable m:NaturalNumber
 Variable n:NaturalNumber
 
-Theorem (P1)  
+Theorem (P1)
   zero:NaturalNumber
   Proof
-    zero:NaturalNumber
+    zero:NaturalNumber by construction
  
+###
 Theorem (P2)
   Suppose
     n:NaturalNumber
