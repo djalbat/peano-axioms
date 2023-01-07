@@ -1,30 +1,29 @@
-Variable l:NaturalNumber
-Variable m:NaturalNumber
-Variable n:NaturalNumber
+Variable l
+Variable m
+Variable n
 
 Theorem (P1)
   zero:NaturalNumber
   Proof
     zero:NaturalNumber by construction
  
-###
 Theorem (P2)
   Suppose
     n:NaturalNumber
-  Hence
+  Then
     n = n
   Proof
-    n = n
+    n = n by construction
 
-Conjecture (P3)
+Theorem (P3)
   Suppose
     n:NaturalNumber
     m:NaturalNumber
     n = m
-  Hence
-    successor(n)=successor(m)    
+  Then
+    successor(n)=successor(m)
   Proof
-    successor(n)=successor(m)    
+    successor(n)=successor(m) by construction
 
 Theorem (P4)
   Suppose
@@ -33,19 +32,20 @@ Theorem (P4)
     l:NaturalNumber
     l = n
     n = m
-  Hence 
+  Then
     l = m      
   Proof
-    l = m      
-               
+    l = m by construction
+
+###
 Theorem (P5)
   Suppose
     n:NaturalNumber
     n = m
-  Hence
+  Then
     m:NaturalNumber
   Proof
-    m:NaturalNumber
+    m:NaturalNumber by construction
 
 Theorem (P6)
   Suppose 
