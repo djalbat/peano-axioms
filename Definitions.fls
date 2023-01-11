@@ -2,6 +2,7 @@ Variable l
 Variable m
 Variable n
 
+###
 Theorem (P1)
   zero:NaturalNumber
   Proof
@@ -21,9 +22,9 @@ Theorem (P3)
     m:NaturalNumber
     n = m
   Then
-    successor(n)=successor(m)
+    successor(n) = successor(m)
   Proof
-    successor(n)=successor(m) by construction
+    successor(n) = successor(m) by construction
 
 Theorem (P4)
   Suppose
@@ -37,7 +38,6 @@ Theorem (P4)
   Proof
     l = m by construction
 
-###
 Theorem (P5)
   Suppose
     n:NaturalNumber
@@ -50,35 +50,63 @@ Theorem (P5)
 Theorem (P6)
   Suppose 
     n:NaturalNumber
-  Hence
-    successor(n):NaturalNumber
+  Then
+    successor(n):NonZeroNaturalNumber
   Proof
-    successor(n):NaturalNumber
+    successor(n):NonZeroNaturalNumber by construction
 
 Theorem (P7)
-  Suppose 
+  Suppose
     n:NaturalNumber
     m:NaturalNumber
-  Hence
-    n = m iff successor(n)=successor(m)
+  Then
+    (n = m) iff (successor(n) = successor(m))
   Proof
     Suppose
       n = m
-    Hence
-      successor(n)=successor(m)
-    n = m => successor(n)=successor(m)
+    Therefore
+      successor(n) = successor(m) by construction
+    (n = m) => (successor(n) = successor(m)) by ImplicationIntroduction
     Suppose
-      successor(n)=successor(m)
-    Hence
-      n = m
-    successor(n)=successor(m) => n = m
+      successor(n) = successor(m)
+    Therefore
+      n = m by construction
+    (successor(n) = successor(m)) => (n = m) by ImplicationIntroduction
   Therefore
-    n = m iff successor(n)=successor(m) 
+    (n = m) iff (successor(n) = successor(m)) by BiconditionalIntroduction
+###
+
+Type SpuriousType
 
 Theorem (P8)
   Suppose
     n:NaturalNumber
-  Hence
+  Then
     ¬(successor(n) = zero)
   Proof
-    ¬(successor(n) = zero)
+    Suppose
+      successor(n) = zero
+      zero:SpuriousType
+    Hence
+      predecessor(successor(n)) = predecessor(zero)
+    Therefore
+      zero:NonZeroNaturalNumber
+    (successor(n) = zero) => zero:NonZeroNaturalNumber by ImplicationIntroduction
+    Suppose
+      successor(n) = zero
+    Therefore
+      ¬(zero:NonZeroNaturalNumber) by ZeroIsNotANonZeroNaturalNumber
+    (successor(n) = zero) => ¬(zero:NonZeroNaturalNumber) by ImplicationIntroduction
+  Therefore
+    ¬(successor(n) = zero) by NegationIntroduction
+
+
+
+
+
+
+
+
+
+
+
