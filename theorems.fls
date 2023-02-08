@@ -7,7 +7,8 @@ Theorem (P1)
   zero:NaturalNumber
   Proof
     zero:NaturalNumber by construction
- 
+ ###
+
 Theorem (P2)
   Suppose
     n:NaturalNumber
@@ -16,6 +17,7 @@ Theorem (P2)
   Proof
     n = n by construction
 
+###
 Theorem (P3)
   Suppose
     n:NaturalNumber
@@ -41,7 +43,7 @@ Theorem (P4)
 Theorem (P5)
   Suppose
     n:NaturalNumber
-    n = m
+    m = n
   Then
     m:NaturalNumber
   Proof
@@ -57,26 +59,27 @@ Theorem (P6)
 
 Theorem (P7)
   Suppose
-    n:NaturalNumber
     m:NaturalNumber
+    n:NaturalNumber
   Then
     (n = m) iff (successor(n) = successor(m))
   Proof
     Suppose
-      n = m
-    Therefore
-      successor(n) = successor(m) by construction
-    (n = m) => (successor(n) = successor(m)) by ImplicationIntroduction
-    Suppose
       successor(n) = successor(m)
-    Therefore
+    Hence
+      predecessor(successor(n)) = predecessor(successor(m)) by construction
+      m = predecessor(successor(m)) by PredecessorsOfSuccessorsNaturalNumbers
+      n = predecessor(successor(n)) by PredecessorsOfSuccessorsNaturalNumbers
+    Then
       n = m by construction
-    (successor(n) = successor(m)) => (n = m) by ImplicationIntroduction
+    (successor(n) = successor(m)) => (n = m) by ConditionalProof
+    Suppose
+      n = m
+    Then
+      successor(n) = successor(m) by construction
+    (n = m) => (successor(n) = successor(m)) by ConditionalProof
   Therefore
     (n = m) iff (successor(n) = successor(m)) by BiconditionalIntroduction
-###
-
-Type SpuriousType
 
 Theorem (P8)
   Suppose
@@ -85,28 +88,17 @@ Theorem (P8)
     ¬(successor(n) = zero)
   Proof
     Suppose
+      zero:RationalNumber
       successor(n) = zero
-      zero:SpuriousType
     Hence
-      predecessor(successor(n)) = predecessor(zero)
-    Therefore
+      predecessor(successor(n)) = predecessor(zero) by construction
+    Then
       zero:NonZeroNaturalNumber
-    (successor(n) = zero) => zero:NonZeroNaturalNumber by ImplicationIntroduction
+    (successor(n) = zero) => zero:NonZeroNaturalNumber by ConditionalProof
     Suppose
       successor(n) = zero
-    Therefore
+    Then
       ¬(zero:NonZeroNaturalNumber) by ZeroIsNotANonZeroNaturalNumber
-    (successor(n) = zero) => ¬(zero:NonZeroNaturalNumber) by ImplicationIntroduction
+    (successor(n) = zero) => ¬(zero:NonZeroNaturalNumber) by ConditionalProof
   Therefore
-    ¬(successor(n) = zero) by NegationIntroduction
-
-
-
-
-
-
-
-
-
-
-
+    ¬(successor(n) = zero) by ProofByNegation
