@@ -2,12 +2,10 @@ Variable l
 Variable m
 Variable n
 
-###
 Theorem (P1)
   zero:NaturalNumber
   Proof
-    zero:NaturalNumber by construction
- ###
+    zero:NaturalNumber
 
 Theorem (P2)
   Suppose
@@ -15,9 +13,8 @@ Theorem (P2)
   Then
     n = n
   Proof
-    n = n by construction
+    n = n
 
-###
 Theorem (P3)
   Suppose
     n:NaturalNumber
@@ -26,7 +23,7 @@ Theorem (P3)
   Then
     successor(n) = successor(m)
   Proof
-    successor(n) = successor(m) by construction
+    successor(n) = successor(m)
 
 Theorem (P4)
   Suppose
@@ -38,16 +35,16 @@ Theorem (P4)
   Then
     l = m      
   Proof
-    l = m by construction
+    l = m
 
 Theorem (P5)
   Suppose
     n:NaturalNumber
-    m = n
+    n = m
   Then
     m:NaturalNumber
   Proof
-    m:NaturalNumber by construction
+    m:NaturalNumber
 
 Theorem (P6)
   Suppose 
@@ -55,7 +52,7 @@ Theorem (P6)
   Then
     successor(n):NonZeroNaturalNumber
   Proof
-    successor(n):NonZeroNaturalNumber by construction
+    successor(n):NonZeroNaturalNumber
 
 Theorem (P7)
   Suppose
@@ -67,16 +64,16 @@ Theorem (P7)
     Suppose
       successor(n) = successor(m)
     Hence
-      predecessor(successor(n)) = predecessor(successor(m)) by construction
+      predecessor(successor(n)) = predecessor(successor(m))
       m = predecessor(successor(m)) by PredecessorsOfSuccessorsNaturalNumbers
       n = predecessor(successor(n)) by PredecessorsOfSuccessorsNaturalNumbers
     Then
-      n = m by construction
+      n = m
     (successor(n) = successor(m)) => (n = m) by ConditionalProof
     Suppose
       n = m
     Then
-      successor(n) = successor(m) by construction
+      successor(n) = successor(m) 
     (n = m) => (successor(n) = successor(m)) by ConditionalProof
   Therefore
     (n = m) iff (successor(n) = successor(m)) by BiconditionalIntroduction
@@ -87,18 +84,23 @@ Theorem (P8)
   Then
     ¬(successor(n) = zero)
   Proof
+    zero:NaturalNumber
+    successor(zero):NonZeroNaturalNumber
     Suppose
-      zero:RationalNumber
       successor(n) = zero
     Hence
-      predecessor(successor(n)) = predecessor(zero) by construction
-    Then
-      zero:NonZeroNaturalNumber
+      n:NaturalNumber
+      zero:NaturalNumber
+      zero = successor(n)
+    Then 
+      zero:NonZeroNaturalNumber by SuccessorsOfNaturalNumbersAreNonZeroNaturalNumbers
     (successor(n) = zero) => zero:NonZeroNaturalNumber by ConditionalProof
-    Suppose
-      successor(n) = zero
-    Then
-      ¬(zero:NonZeroNaturalNumber) by ZeroIsNotANonZeroNaturalNumber
-    (successor(n) = zero) => ¬(zero:NonZeroNaturalNumber) by ConditionalProof
+    ¬(zero:NonZeroNaturalNumber) by ZeroNotNonZeroNaturalNumber
   Therefore
-    ¬(successor(n) = zero) by ProofByNegation
+    ¬(successor(n) = zero) by ModusTollens
+
+
+
+
+
+
