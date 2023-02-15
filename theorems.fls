@@ -44,6 +44,8 @@ Theorem (P5)
   Then
     m:NaturalNumber
   Proof
+    (n = m) |- m:NaturalNumber
+  Therefore
     m:NaturalNumber
 
 Theorem (P6)
@@ -98,9 +100,3 @@ Theorem (P8)
     ¬(zero:NonZeroNaturalNumber) by ZeroNotNonZeroNaturalNumber
   Therefore
     ¬(successor(n) = zero) by ModusTollens
-
-
-
-
-
-
