@@ -10,4 +10,4 @@ In fact this package contains theorems corresponding to the Peano axioms that ha
 
 ## Contact
 
-* http://djalbat.com
+* https://djalbat.com
