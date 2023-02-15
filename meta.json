@@ -1,7 +1,7 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": "https://github.com/djalbat/peano-axioms",
   "dependencies": {
-    "arithmetic": "2.0"
+    "arithmetic": "3.0"
   }
 }
