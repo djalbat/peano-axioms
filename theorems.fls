@@ -98,6 +98,3 @@ Theorem (P8)
     ¬(zero:NonZeroNaturalNumber) by ZeroNotNonZeroNaturalNumber
   Therefore
     ¬(successor(n) = zero) by ModusTollens
-
-
-
