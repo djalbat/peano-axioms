@@ -71,12 +71,12 @@ Theorem (P7)
       n = predecessor(successor(n)) by PredecessorsOfSuccessorsOfNaturalNumbers
     Then
       n = m
-    (successor(n) = successor(m)) => (n = m) by ConditionalProof
+    (successor(n) = successor(m)) ⇒ (n = m) by ConditionalProof
     Suppose
       n = m
     Then
       successor(n) = successor(m) 
-    (n = m) => (successor(n) = successor(m)) by ConditionalProof
+    (n = m) ⇒ (successor(n) = successor(m)) by ConditionalProof
   Therefore
     (n = m) iff (successor(n) = successor(m)) by BiconditionalIntroduction
 
@@ -94,7 +94,7 @@ Theorem (P8)
       zero = successor(n)
     Then 
       zero:NonZeroNaturalNumber by SuccessorsOfNaturalNumbersAreNonZeroNaturalNumbers
-    (successor(n) = zero) => zero:NonZeroNaturalNumber by ConditionalProof
+    (successor(n) = zero) ⇒ zero:NonZeroNaturalNumber by ConditionalProof
     ¬(zero:NonZeroNaturalNumber) by ZeroNotNonZeroNaturalNumber
   Therefore
     ¬(successor(n) = zero) by ModusTollens
