@@ -44,7 +44,7 @@ Theorem (P5)
   Then
     m:NaturalNumber
   Proof
-    (n = m) |- m:NaturalNumber
+    (n = m) ⊢ m:NaturalNumber
   Therefore
     m:NaturalNumber
 
