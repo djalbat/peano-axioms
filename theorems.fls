@@ -3,13 +3,13 @@ Variable m
 Variable n
 
 Theorem (P1)
-  zero:NaturalNumber
+  zero:ℕ
   Proof
-    zero:NaturalNumber
+    zero:ℕ
 
 Theorem (P2)
   Suppose
-    n:NaturalNumber
+    n:ℕ
   Then
     n = n
   Proof
@@ -17,84 +17,73 @@ Theorem (P2)
 
 Theorem (P3)
   Suppose
-    n:NaturalNumber
-    m:NaturalNumber
-    n = m
+    m:ℕ
+    n:ℕ
+    m = n
   Then
-    successor(n) = successor(m)
+    successor(m) = successor(n)
   Proof
-    successor(n) = successor(m)
+    successor(m) = successor(n)
 
 Theorem (P4)
   Suppose
-    n:NaturalNumber
-    m:NaturalNumber
-    l:NaturalNumber
-    l = n
-    n = m
-  Then
-    l = m      
-  Proof
+    l:ℕ
+    m:ℕ
+    n:ℕ
     l = m
+    m = n
+  Then
+    l = n
+  Proof
+    l = n
 
 Theorem (P5)
   Suppose
-    n:NaturalNumber
+    m:ℕ
     n = m
   Then
-    m:NaturalNumber
+    n:ℕ
   Proof
-    (n = m) ⊢ m:NaturalNumber
-  Therefore
-    m:NaturalNumber
+    n:ℕ
 
 Theorem (P6)
   Suppose 
-    n:NaturalNumber
+    n:ℕ
   Then
-    successor(n):NonZeroNaturalNumber
+    successor(n):ℕ\{0}
   Proof
-    successor(n):NonZeroNaturalNumber
+    successor(n):ℕ\{0}
 
 Theorem (P7)
   Suppose
-    m:NaturalNumber
-    n:NaturalNumber
+    m:ℕ
+    n:ℕ
   Then
-    (n = m) iff (successor(n) = successor(m))
+    (m = n) iff (successor(m) = successor(n))
   Proof
     Suppose
-      successor(n) = successor(m)
+      successor(m) = successor(n)
     Hence
-      predecessor(successor(n)) = predecessor(successor(m))
-      m = predecessor(successor(m)) by PredecessorsOfSuccessorsOfNaturalNumbers
-      n = predecessor(successor(n)) by PredecessorsOfSuccessorsOfNaturalNumbers
+      predecessor(successor(m)) = predecessor(successor(n))
+      predecessor(successor(m)) = m from PredecessorsOfSuccessors
+      predecessor(successor(n)) = n from PredecessorsOfSuccessors
     Then
-      n = m
-    (successor(n) = successor(m)) ⇒ (n = m) by ConditionalProof
+      m = n
+    (successor(m) = successor(n)) ⇒ (m = n) by ConditionalProof
     Suppose
-      n = m
+      m = n
     Then
-      successor(n) = successor(m) 
-    (n = m) ⇒ (successor(n) = successor(m)) by ConditionalProof
+      successor(m) = successor(m) 
+    (m = n) ⇒ (successor(m) = successor(n)) by ConditionalProof
   Therefore
-    (n = m) iff (successor(n) = successor(m)) by BiconditionalIntroduction
+    (m = n) iff (successor(m) = successor(n)) by BiconditionalIntroduction
 
 Theorem (P8)
   Suppose
-    n:NaturalNumber
+    n:ℕ
   Then
-    ¬(successor(n) = zero)
+    successor(n) ≠ zero
   Proof
-    zero:NaturalNumber
-    successor(zero):NonZeroNaturalNumber
-    Suppose
-      successor(n) = zero
-    Hence
-      zero = successor(n)
-    Then 
-      zero:NonZeroNaturalNumber by SuccessorsOfNaturalNumbersAreNonZeroNaturalNumbers
-    (successor(n) = zero) ⇒ zero:NonZeroNaturalNumber by ConditionalProof
-    ¬(zero:NonZeroNaturalNumber) by ZeroNotNonZeroNaturalNumber
+    successor(n):ℕ\{0}
   Therefore
-    ¬(successor(n) = zero) by ModusTollens
+    successor(n) ≠ zero by NonZeroNaturalNumberInfersNotZero
