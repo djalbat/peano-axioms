@@ -73,7 +73,7 @@ Theorem (P7)
     Suppose
       m = n
     Then
-      successor(m) = successor(m) 
+      successor(m) = successor(n) 
     (m = n) ⇒ (successor(m) = successor(n)) by ConditionalProof
   Therefore
     (m = n) iff (successor(m) = successor(n)) by BiconditionalIntroduction
