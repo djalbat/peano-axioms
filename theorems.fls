@@ -2,7 +2,6 @@ Variable l
 Variable m
 Variable n
 
-###
 Theorem (P1)
   zero:ℕ
   Proof
@@ -79,7 +78,6 @@ Theorem (P7)
     (successor(m) = successor(n)) ⇒ (m = n)
   Therefore
     (m = n) iff (successor(m) = successor(n)) by BiconditionalIntroduction
-###
 
 Theorem (P8)
   Suppose
