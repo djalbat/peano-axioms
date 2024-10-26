@@ -1,8 +1,8 @@
 {
-  "version": "1.0.1",
+  "version": "1.1.0",
   "repository": "https://github.com/djalbat/peano-axioms",
   "dependencies": {
     "equality": "3.0",
-    "natural-numbers": "2.0"
+    "natural-numbers": "3.0"
   }
 }
