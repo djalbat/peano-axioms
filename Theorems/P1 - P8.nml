@@ -65,8 +65,8 @@ Theorem (P7)
       successor(m) = successor(n)
     Hence
       predecessor(successor(m)) = predecessor(successor(n))
-      predecessor(successor(m)) = m from PredecessorsOfSuccessors
-      predecessor(successor(n)) = n from PredecessorsOfSuccessors
+      predecessor(successor(m)) = m from NaturalNumberPredecessorsOfSuccessors
+      predecessor(successor(n)) = n from NaturalNumberPredecessorsOfSuccessors
     Then
       m = n
     (successor(m) = successor(n)) ⇒ (m = n) by ConditionalProof
