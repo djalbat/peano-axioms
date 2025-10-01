@@ -3,9 +3,9 @@ Variable m
 Variable n
 
 Theorem (P1)
-  zero:ℕ
+  𝘻𝘦𝘳𝘰:ℕ
   Proof
-    zero:ℕ
+    𝘻𝘦𝘳𝘰:ℕ
 
 Theorem (P2)
   Suppose
@@ -21,9 +21,9 @@ Theorem (P3)
     n:ℕ
     m = n
   Then
-    successor(m) = successor(n)
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
   Proof
-    successor(m) = successor(n)
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
 
 Theorem (P4)
   Suppose
@@ -50,41 +50,41 @@ Theorem (P6)
   Suppose 
     n:ℕ
   Then
-    successor(n):ℕ\{0}
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ\{0}
   Proof
-    successor(n):ℕ\{0}
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ\{0}
 
 Theorem (P7)
   Suppose
     m:ℕ
     n:ℕ
   Then
-    (m = n) iff (successor(m) = successor(n))
+    (m = n) 𝘪𝘧𝘧 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
   Proof
     Suppose
-      successor(m) = successor(n)
+      𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
     Hence
-      predecessor(successor(m)) = predecessor(successor(n))
-      predecessor(successor(m)) = m from NaturalNumberPredecessorsOfSuccessors
-      predecessor(successor(n)) = n from NaturalNumberPredecessorsOfSuccessors
+      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = 𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
+      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = m by NaturalNumberPredecessorsOfSuccessors
+      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) = n by NaturalNumberPredecessorsOfSuccessors
     Then
       m = n
-    (successor(m) = successor(n)) ⇒ (m = n) by ConditionalProof
+    (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) ⇒ (m = n) by ConditionalProof
     Suppose
       m = n
     Then
-      successor(m) = successor(n) 
-    (m = n) ⇒ (successor(m) = successor(n)) by ConditionalProof
-    (successor(m) = successor(n)) ⇒ (m = n)
+      𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) 
+    (m = n) ⇒ (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by ConditionalProof
+    (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) ⇒ (m = n)
   Therefore
-    (m = n) iff (successor(m) = successor(n)) by BiconditionalIntroduction
+    (m = n) 𝘪𝘧𝘧 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by BiconditionalIntroduction
 
 Theorem (P8)
   Suppose
     n:ℕ
   Then
-    successor(n) ≠ zero
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰
   Proof
-    successor(n):ℕ\{0}
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ\{0}
   Therefore
-    successor(n) ≠ zero by NonZeroNaturalNumberInfersNotZero
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰 by NonZeroNaturalNumberInfersNotZero
