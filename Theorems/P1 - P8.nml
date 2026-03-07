@@ -59,7 +59,7 @@ Theorem (P7)
     m:ℕ
     n:ℕ
   Then
-    (m = n) 𝘪𝘧𝘧 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
+    (m = n) 𝗂𝖿𝖿 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
   Proof
     Suppose
       𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
@@ -77,7 +77,7 @@ Theorem (P7)
     (m = n) ⇒ (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by ConditionalProof
     (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) ⇒ (m = n)
   Therefore
-    (m = n) 𝘪𝘧𝘧 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by BiconditionalIntroduction
+    (m = n) 𝗂𝖿𝖿 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by BiconditionalIntroduction
 
 Theorem (P8)
   Suppose
