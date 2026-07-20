@@ -21,9 +21,9 @@ Theorem (P3)
     n:ℕ
     m = n
   Then
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+    n = m
   Proof
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+    n = m
 
 Theorem (P4)
   Suppose
@@ -50,41 +50,40 @@ Theorem (P6)
   Suppose 
     n:ℕ
   Then
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ\{0}
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ
   Proof
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ\{0}
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ
 
 Theorem (P7)
   Suppose
     m:ℕ
     n:ℕ
+    m = n
   Then
-    (m = n) 𝗂𝖿𝖿 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
   Proof
-    Suppose
-      𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
-    Hence
-      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = 𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
-      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = m by NaturalNumberPredecessorsOfSuccessors
-      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) = n by NaturalNumberPredecessorsOfSuccessors
-    Then
-      m = n
-    (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) ⇒ (m = n) by ConditionalProof
-    Suppose
-      m = n
-    Then
-      𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) 
-    (m = n) ⇒ (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by ConditionalProof
-    (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) ⇒ (m = n)
-  Therefore
-    (m = n) 𝗂𝖿𝖿 (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by BiconditionalIntroduction
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
 
 Theorem (P8)
   Suppose
+    m:ℕ
+    n:ℕ
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+  Then
+    m = n
+  Proof
+    𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = 𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
+    𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = m by PredecessorsOfSuccessors
+    𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) = n by PredecessorsOfSuccessors
+  Therefore
+    m = n
+
+Theorem (P9)
+  Suppose 
     n:ℕ
   Then
     𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰
   Proof
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n):ℕ\{0}
+    ¬(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) = 𝘻𝘦𝘳𝘰) by ZeroAndSuccessorsAreDisjoint
   Therefore
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰 by NonZeroNaturalNumberInfersNotZero
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰 by NotEquaInfersUnequal
