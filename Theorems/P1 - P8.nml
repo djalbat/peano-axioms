@@ -82,8 +82,6 @@ Theorem (P9)
   Suppose 
     n:ℕ
   Then
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) != 𝘻𝘦𝘳𝘰
   Proof
-    ¬(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) = 𝘻𝘦𝘳𝘰) by ZeroAndSuccessorsAreDisjoint
-  Therefore
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) ≠ 𝘻𝘦𝘳𝘰 by NotEquaInfersUnequal
+    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n) != 𝘻𝘦𝘳𝘰
