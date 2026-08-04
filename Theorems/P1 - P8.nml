@@ -58,27 +58,27 @@ Theorem (P7)
   Suppose
     m:ℕ
     n:ℕ
-    m = n
   Then
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+    ((m = n) ⇒ (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))) ∧ ((𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))⇒ (m = n))
   Proof
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+    Suppose
+      m = n
+    Then
+      𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+    (m = n) ⇒ (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) by ConditionalProof
+    Suppose
+      𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
+    Hence
+      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = 𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
+      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = m by PredecessorsOfSuccessors
+      𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) = n by PredecessorsOfSuccessors
+    Then
+      m = n
+    (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))⇒ (m = n) by ConditionalProof
+  Therefore
+    ((m = n) ⇒ (𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))) ∧ ((𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))⇒ (m = n)) by ConjunctionIntroduction
 
 Theorem (P8)
-  Suppose
-    m:ℕ
-    n:ℕ
-    𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m) = 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)
-  Then
-    m = n
-  Proof
-    𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = 𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n))
-    𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(m)) = m by PredecessorsOfSuccessors
-    𝘱𝘳𝘦𝘥𝘦𝘤𝘦𝘴𝘴𝘰𝘳(𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘰𝘳(n)) = n by PredecessorsOfSuccessors
-  Therefore
-    m = n
-
-Theorem (P9)
   Suppose 
     n:ℕ
   Then
